@@ -1,0 +1,183 @@
+/* .stat-box {
+    width: 200px;
+    height: 150px;
+    background-color: #333;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: perspective(1000px) rotateY(20deg) rotateX(10deg);
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+}
+
+.stat-content {
+    text-align: center;
+    transform: rotateY(-20deg) rotateX(-10deg);
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover .stat-content {
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+.stat-content p {
+    font-size: 1.2em;
+    font-weight: bold;
+} */
+.main-content {
+    flex-grow: 1; /* Mengambil ruang yang tersisa */
+    padding: 20px 20px 20px 80px; /* Jarak antara konten dan sidebar */
+    overflow-y: auto; /* Memastikan konten bisa discroll jika terlalu panjang */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Menjaga jarak antara kedua box */
+    padding: 20px; /* Memberikan padding pada wrapper */
+}
+
+.box {
+    width: 48%; /* Lebar box sekitar setengah dari container */
+    height: 150px;
+    padding: 20px; /* Padding di dalam box */
+    background-color: white; /* Warna latar belakang box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek shadow */
+    border-radius: 8px; /* Membulatkan sudut box */
+    text-align: center; /* Menengahkan teks di dalam box */
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none;
+    border-radius: 5px; /* Membuat tepian tombol sedikit melengkung */
+    text-decoration: none; /* Menghapus garis bawah */
+    font-size: 16px; /* Ukuran font */
+    transition:
+        background-color 0.3s,
+        color 0.3s; /* Transisi untuk hover */
+}
+
+.download-button:hover,
+.download-button:focus {
+    background-color: #45a049; /* Warna latar belakang saat hover */
+    color: #fff; /* Warna teks saat hover */
+    text-decoration: none; /* Menghapus garis bawah saat hover */
+    cursor: pointer; /* Mengubah cursor saat hover */
+}
+
+.box p {
+    margin: 0;
+    font-size: 1.2em; /* Ukuran font teks */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+.box-user {
+    background-color: #48dbfb; /* Warna biru muda untuk box user */
+}
+
+.box-admin {
+    background-color: #7bed9f; /* Warna merah muda untuk box admin */
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Style for form labels */
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style for input file */
+.input-file {
+    border: 1px solid #ddd;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Style for image preview */
+.image-preview {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Style for the submit button */
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the download PDF button */
+.download-pdf {
+    display: block;
+    width: max-content;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add icon to download PDF button */
+.download-pdf i {
+    margin-left: 5px;
+}
+
+/* Hover effects for buttons */
+.submit-button:hover,
+.download-pdf:hover {
+    opacity: 0.8;
+}
+
+/* Style tambahan untuk responsif */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .form-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .download-pdf {
+        padding: 10px;
+    }
+
+    /* nav {
+        width: 100%;
+        height: auto;
+    } */
+
+    /* body.collapsed nav {
+        width: 100%;
+    } */
+}

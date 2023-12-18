@@ -1,0 +1,121 @@
+/* Include this in your main.css or a separate CSS file and link it in your HTML */
+
+.main-content {
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Allows scrolling */
+    margin-bottom: 20px;
+    max-height: 1000px; /* You can set the maximum height you want here */
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.table-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.table-actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px 0px 0px;
+    padding: 20px;
+}
+
+.table {
+    padding: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.table thead tr.bg-info-subtle th {
+    background-color: #e9f4ff;
+    color: #333;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.py-6 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.px-6 {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.fs-4 {
+    font-size: 1.5rem;
+}

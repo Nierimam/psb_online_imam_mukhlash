@@ -1,0 +1,41 @@
+.edit-user-container {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.edit-user-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.edit-user-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-user-form input,
+.edit-user-form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+.edit-user-form button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-user-form button:hover {
+    background-color: #4cae4c;
+}
