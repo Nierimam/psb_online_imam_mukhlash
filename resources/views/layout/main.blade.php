@@ -37,8 +37,8 @@
     <script src="../js/script_sidebar.js"></script>
     <script src="../js/sidebar_menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/deleteuser.js"></script>
-    <script src="../js/deleteCategory.js"></script>
+    <script src="../../js/deleteuser.js"></script>
+    <script src="../../js/deleteCategory.js"></script>
     <!-- Select2 JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
     <script>

@@ -198,8 +198,10 @@ class AdminController extends Controller
             return response()->json(['message' => 'User not found'], 404);
         }
 
+        // Melakukan soft delete
         $user->delete();
 
+        // Mengirim response berhasil
         return response()->json(['message' => 'User deleted successfully']);
     }
 

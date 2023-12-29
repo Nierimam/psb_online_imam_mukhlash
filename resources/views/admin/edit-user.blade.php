@@ -145,7 +145,7 @@
         </form>
     </div>
 </main>
-<script>
+{{-- <script>
     function fetchKabupaten() {
         var provinceId = document.getElementById('province_id').value;
         var kabupatenSelect = document.getElementById('kabupaten_id');
@@ -167,6 +167,29 @@
                 .catch(error => console.error('Error:', error));
         }
     }
+</script> --}}
+
+<script>
+    function fetchKabupaten() {
+            var provinceId = document.getElementById('province_id').value;
+            var kabupatenSelect = document.getElementById('kabupaten_id');
+    
+            // Bersihkan pilihan kabupaten sebelumnya
+            kabupatenSelect.innerHTML = '<option value="">Pilih Kabupaten</option>';
+    
+            if (provinceId) {
+                // Lakukan request AJAX ke server
+                fetch('/admin/get-kabupaten-by-provinces/' + provinceId)
+                    .then(response => response.json())
+                    .then(data => {
+                        data.forEach(function (kabupaten) {
+                            var option = new Option(kabupaten.nama_kabupaten, kabupaten.id);
+                            kabupatenSelect.add(option);
+                        });
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+        }
 </script>
 
 <script>

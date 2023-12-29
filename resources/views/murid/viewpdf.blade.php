@@ -180,6 +180,9 @@
                 </div>
                 <div class="info-section">
                     <label>Negara Asing</label>
+                    @if ($user->negara_asing == NULL)
+                    <p> - </p>
+                    @endif
                     <p>{{ $user->negara_asing }}</p>
                 </div>
                 <div class="info-section">

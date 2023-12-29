@@ -33,8 +33,11 @@
                             <td>{{ $document->nama_surat }}</td>
                             <td>
                                 {{ $document->user->nama_lengkap }}
+                                @if($document->user->deleted_at)
+                                <span class="badge bg-warning"
+                                    style="color: red; font-weight: bold">&nbsp;&emsp;|DELETED</span>
+                                @endif
                             </td>
-
                         </tr>
                         @endforeach
                     </tbody>

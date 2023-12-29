@@ -65,9 +65,10 @@
             </li>
             <li class="{{ $currentRoute === 'murid.profile' ? 'active' : '' }}">
                 <a href="{{ route('murid.profile') }}" title="Dashboard" class="tooltip">
-                    <i class="bi bi-person-bounding-box" style="font-size: 32px"></i> <span
-                        class="link hide">Dashboard</span>
-                    <span class="tooltip__content">Dashboard</span>
+                    <i class="bi bi-person-bounding-box" style="font-size: 32px"></i> <span class="link hide">Change
+                        Profile</span>
+                    <span class="tooltip__content">Change
+                        Profile</span>
                 </a>
             </li>
             @endif
